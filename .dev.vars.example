@@ -1,0 +1,4 @@
+# Optional Credence configuration. Leave unset for the local demo.
+CREDENCE_LICENSE_KEY=
+CREDENCE_PROFILE_ID=
+CREDENCE_REGISTERED_ORIGIN=
