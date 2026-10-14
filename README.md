@@ -49,6 +49,20 @@ A few other things worth clicking:
 - Pause new requests keeps rides that are already confirmed. Cancel series drops future dates.
 - A neighborhood with no drivers shows an empty search. That is expected.
 
+## Credence
+
+Credence is the optional wallet check on **Profile & checks**. The button is **Verify with Credence**, under Digital credential. It is off in this copy of the app, and the button stays disabled until it is configured.
+
+The empty placeholders are in `.dev.vars.example`:
+
+- `CREDENCE_LICENSE_KEY`
+- `CREDENCE_PROFILE_ID`
+- `CREDENCE_REGISTERED_ORIGIN`
+
+Copy that file to `.dev.vars`, fill in your own values, and restart the server. `.dev.vars` is not committed. The registered origin has to match the address you open in the browser.
+
+The server code is `app/api/identity/route.ts`. Longer setup notes are in [docs/CREDENCE.md](docs/CREDENCE.md).
+
 ## Checks
 
 ```sh
@@ -74,9 +88,10 @@ The API check changes the sample data. Reset the demo from the campus reviewer w
 | `app/globals.css` | Styles |
 | `lib/commutes.mjs` | Matching, weekly rides, and seat rules |
 | `lib/server.ts` | Saved workspace and database updates |
-| `app/api/` | Search, actions, documents, and credentials |
+| `app/api/identity/route.ts` | Credence wallet check |
+| `app/api/` | Search, actions, and documents |
 | `db/`, `drizzle/` | Schema and migrations |
 | `scripts/` | Local launch and database setup |
 | `tests/` | Domain and API checks |
 
-Mailbox checks, vehicle reviews, and the people in the app are sample data. Real student login is not built. An optional credential check can be turned on later in [docs/CREDENCE.md](docs/CREDENCE.md). More detail on how matching and storage work is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Mailbox checks, vehicle reviews, and the people in the app are sample data. Real student login is not built. More detail on how matching and storage work is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
