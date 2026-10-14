@@ -1,18 +1,27 @@
 # CampusLoop
 
-Weekly campus rides. Search for a ride, request a seat, and manage each date after the driver accepts.
+Recurring rides for campus life.
 
 ![CampusLoop](docs/preview.png)
 
-## What it does
+## About
 
-- Match rides by neighborhood, campus, weekdays, and departure time (within 30 minutes).
-- A seat is reserved only after the driver accepts the request. Each weekday has its own seat count.
-- Cancel one date or the whole weekly series. Check in, mark a ride complete, or report a no-show for that date only.
-- Drivers can post a weekly offer once a vehicle is reviewed.
-- A campus reviewer can look at reports and vehicle documents. Nothing applies a penalty on its own.
+The commute repeats. The planning often does not. Someone who needs a ride every Monday and Wednesday still has to ask who is driving, whether a seat is open, and what happens when one day falls through.
 
-Sample people are already in the app: Maya (rider), Alex (driver), Jordan (driver), and a campus reviewer. Everyone on this computer shares that same workspace. There is no separate login.
+CampusLoop keeps that week in one place. A match shares the pickup area and campus, overlaps on at least one weekday, and leaves within 30 minutes of the time you want. Sending a request does not hold a seat. The seat is reserved only when the driver accepts, and capacity is checked again then, so two people cannot take the last seat.
+
+After that, the routine stays on the schedule. You can cancel one date without dropping the rest of the week. Drivers post a weekly offer after a vehicle review. Credential checks stay separate from that review: the Credence wallet adapter is built in, and it is not turned on in this copy, so the credential stays unverified. An age check is not a license to drive. A campus reviewer can read reports and documents. Nothing applies a penalty on its own.
+
+## What you can do
+
+- Find a ride by neighborhood, campus, weekdays, and departure time.
+- Request the days you actually need. Pending requests reserve no seats.
+- Accept a request and see the seat count change for those weekdays only.
+- Cancel one date, or the whole series. Check in, mark a ride complete, or report a no-show for that date.
+- Offer a weekly ride once a vehicle is reviewed.
+- Review reports and vehicle documents from the campus reviewer account.
+
+Sample people are already in the app: Maya (rider), Alex (driver), Jordan (driver), and a campus reviewer. Everyone on this computer shares that same workspace. Switching accounts is part of the demo. There is no separate login.
 
 ## Run
 
